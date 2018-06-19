@@ -28,5 +28,6 @@
 
 ## IP адреса
 
-bastion_IP = 35.198.167.169
+bastion_IP = 35.204.67.191
+
 someinternalhost_IP = 10.164.0.3
