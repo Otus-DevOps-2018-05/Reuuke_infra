@@ -4,7 +4,9 @@
     Файлы созданы
  - [X] Дополнительные задания
   - Работа с Firewall через gcloud
+
 `gcloud compute firewall-rules create default-puma-server --allow=tcp:9292 --target-tags=puma-server`
+
   - startup script
 ```
 gcloud compute instances create reddit-app\
