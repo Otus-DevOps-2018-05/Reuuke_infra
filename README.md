@@ -42,6 +42,9 @@ puma -d'
 ## IP адреса
 
 bastion_IP = 35.198.167.169
+
 someinternalhost_IP = 10.164.0.3
+
 testapp_IP = 35.204.194.114
+
 testapp_port = 9292
