@@ -3,9 +3,9 @@
  - [X] Основное ДЗ
     Файлы созданы
  - [X] Дополнительные задания
- -- Работа с Firewall через gcloud
+  - Работа с Firewall через gcloud
     `gcloud compute firewall-rules create default-puma-server --allow=tcp:9292 --target-tags=puma-server`
-  -- startup script
+  - startup script
 ```
 gcloud compute instances create reddit-app\
   --boot-disk-size=10GB \
