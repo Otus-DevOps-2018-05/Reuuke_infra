@@ -1,23 +1,36 @@
-# Выполнено ДЗ №3
+# Выполнено ДЗ №4
 
  - [X] Основное ДЗ
-    `ssh -t -A reuuke@35.204.67.191 ssh 10.164.0.3`
- - [X] Задание со *
-    ```
-    cat << EOF >> ~/.ssh/config
-    Host bastion
-      Hostname 35.204.67.191
-      User reuuke
-    Host someinternalhost
-      Hostname 10.164.0.3
-      User reuuke
-      ProxyJump bastion
-    EOF
-    ```
+    Файлы созданы
+ - [X] Дополнительные задания
+ -- Работа с Firewall через gcloud
+    `gcloud compute firewall-rules create default-puma-server --allow=tcp:9292 --target-tags=puma-server`
+  -- startup script
+```
+gcloud compute instances create reddit-app\
+  --boot-disk-size=10GB \
+  --image-family ubuntu-1604-lts \
+  --image-project=ubuntu-os-cloud \
+  --machine-type=g1-small \
+  --tags puma-server \
+  --restart-on-failure \
+  --metadata startup-script='#!/bin/sh
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+sudo cat <<EOF> /etc/apt/sources.list.d/mongodb-org-3.2.list
+deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse
+EOF
+sudo apt-get update
+sudo apt-get install -y mongodb-org ruby-full ruby-bundler build-essential
+sudo systemctl start mongod
+sudo systemctl enable mongod
+git clone -b monolith https://github.com/express42/reddit.git
+cd reddit
+bundle install
+puma -d'
+```
 
 ## В процессе сделано:
- - Регистрация в GCP
- - Все пункты по ДЗ
+ - ничего интересного
 
 ## Как проверить работоспособность:
  - Не требуется
@@ -28,6 +41,7 @@
 
 ## IP адреса
 
-bastion_IP = 35.204.67.191
-
+bastion_IP = 35.198.167.169
 someinternalhost_IP = 10.164.0.3
+testapp_IP = 35.204.194.114
+testapp_port = 9292
