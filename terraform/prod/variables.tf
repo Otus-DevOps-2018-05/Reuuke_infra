@@ -40,5 +40,5 @@ variable db_disk_image {
 }
 
 variable environment_name {
-  default = "stage"
+  default = "prod"
 }
