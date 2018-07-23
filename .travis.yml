@@ -4,6 +4,18 @@ language: bash
 before_install:
 - curl https://raw.githubusercontent.com/express42/otus-homeworks/2018-05/run.sh |
   bash
+
+install: ./install-dependencies.sh
+script:
+- packer-io validate -var-file=packer/variables.json.example packer/app.json
+- packer-io validate -var-file=packer/variables.json.example packer/db.json
+- packer-io validate -var-file=packer/variables.json.example packer/immutable.json
+- cd terraform/prod ; terraform init -backend=false ; terraform validate --var-file=terraform.tfvars.example
+- tflint --var-file=terraform.tfvars.example
+- cd ../stage ; terraform init -backend=false ; terraform validate --var-file=terraform.tfvars.example
+- tflint --var-file=terraform.tfvars.example
+- cd ../../ansible ; ansible-lint playbooks/*.yml
+
 notifications:
   slack:
     rooms:

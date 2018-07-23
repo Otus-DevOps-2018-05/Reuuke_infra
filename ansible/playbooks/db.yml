@@ -1,0 +1,7 @@
+---
+- name: Configure hosts & deploy application
+# hosts: tag_{{ environment }}-reddit-db
+  hosts: db
+  become: true
+  roles:
+    - db

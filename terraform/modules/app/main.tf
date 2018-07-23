@@ -2,7 +2,7 @@ resource "google_compute_instance" "reddit-app" {
   name         = "${var.environment_name}-reddit-app"
   machine_type = "g1-small"
   zone         = "${var.zone}"
-  tags         = ["reddit-app"]
+  tags         = ["${var.environment_name}-reddit-app"]
 
   boot_disk {
     initialize_params {
@@ -24,11 +24,11 @@ resource "google_compute_instance" "reddit-app" {
 }
 
 resource "google_compute_address" "app_ip" {
-  name = "reddit-app-ip"
+  name = "${var.environment_name}-reddit-app-ip"
 }
 
 resource "google_compute_firewall" "firewall_puma" {
-  name    = "allow-puma-default"
+  name    = "${var.environment_name}-allow-puma"
   network = "default"
 
   allow {
@@ -37,5 +37,5 @@ resource "google_compute_firewall" "firewall_puma" {
   }
 
   source_ranges = ["0.0.0.0/0"]
-  target_tags   = ["reddit-app"]
+  target_tags   = ["${var.environment_name}-reddit-app"]
 }
