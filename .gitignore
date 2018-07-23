@@ -4,3 +4,5 @@
 *.tfstate.backup
 *.tfvars
 .terraform/
+*.retry
+Infra-609c709cf03c.json
