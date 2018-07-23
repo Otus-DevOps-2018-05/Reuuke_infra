@@ -1,3 +1,14 @@
+# Build Status
+
+- [Cloud bastion](#cloud-bastion)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra.svg?branch=cloud-bastion)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra)
+- [Cloud testapp](#cloud-testapp)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra.svg?branch=cloud-testapp)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra)
+- [Packer base](#packer-base)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra.svg?branch=packer-base)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra)
+- [Terraform-1](#terraform-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra.svg?branch=terraform-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra)
+- [Terraform-2](#terraform-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra.svg?branch=terraform-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra)
+- [Ansible-1](#ansible-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra.svg?branch=ansible-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra)
+- [Ansible-2](#ansible-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra.svg?branch=ansible-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra)
+- [Ansible-3](#ansible-3)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra.svg?branch=ansible-3)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra)
+
 # Выполнено ДЗ №3
 
  - [X] Основное ДЗ
@@ -169,6 +180,27 @@ testapp_port = 9292
 
 ## Как проверить работоспособность:
  - запустить playbook
+
+## PR checklist
+ - [X] Выставил label с номером домашнего задания
+ - [X] Выставил label с темой домашнего задания
+
+# Выполнено ДЗ №10
+
+ - [X] Основное ДЗ
+  - Пройдены все шаги
+ - [X] Задание со *
+  - Передаём environment через -e для конфигурирования только нужных серверов + навешываем теги через terraform для разделения окружений (можно фильтровать по имени, но ресурсоёмко)
+```ansible-playbook playbooks/site.yml -e environment=stage```
+ - [X] Задание с **
+  - Выполнено
+
+## В процессе сделано:
+ - Всё по ДЗ
+
+## Как проверить работоспособность:
+ - Запустить playbook
+ - Проверить статус в Travis CI
 
 ## PR checklist
  - [X] Выставил label с номером домашнего задания
