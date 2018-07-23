@@ -1,13 +1,13 @@
 # Build Status
 
-- [Cloud bastion](#cloud-bastion)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra.svg?branch=cloud-bastion)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra)
-- [Cloud testapp](#cloud-testapp)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra.svg?branch=cloud-testapp)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra)
-- [Packer base](#packer-base)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra.svg?branch=packer-base)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra)
-- [Terraform-1](#terraform-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra.svg?branch=terraform-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra)
-- [Terraform-2](#terraform-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra.svg?branch=terraform-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra)
-- [Ansible-1](#ansible-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra.svg?branch=ansible-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra)
-- [Ansible-2](#ansible-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra.svg?branch=ansible-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra)
-- [Ansible-3](#ansible-3)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra.svg?branch=ansible-3)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_Infra)
+- [Cloud bastion](#cloud-bastion)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra.svg?branch=cloud-bastion)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra)
+- [Cloud testapp](#cloud-testapp)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra.svg?branch=cloud-testapp)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra)
+- [Packer base](#packer-base)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra.svg?branch=packer-base)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra)
+- [Terraform-1](#terraform-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra.svg?branch=terraform-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra)
+- [Terraform-2](#terraform-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra.svg?branch=terraform-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra)
+- [Ansible-1](#ansible-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra.svg?branch=ansible-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra)
+- [Ansible-2](#ansible-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra.svg?branch=ansible-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra)
+- [Ansible-3](#ansible-3)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra.svg?branch=ansible-3)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra)
 
 # Выполнено ДЗ №3
 
