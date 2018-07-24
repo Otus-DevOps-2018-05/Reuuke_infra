@@ -8,6 +8,7 @@
 - [Ansible-1](#ansible-1)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra.svg?branch=ansible-1)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra)
 - [Ansible-2](#ansible-2)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra.svg?branch=ansible-2)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra)
 - [Ansible-3](#ansible-3)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra.svg?branch=ansible-3)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra)
+- [Ansible-4](#ansible-4)   [![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra.svg?branch=ansible-4)](https://travis-ci.com/Otus-DevOps-2018-05/Reuuke_infra)
 
 # Выполнено ДЗ №3
 
@@ -205,3 +206,24 @@ testapp_port = 9292
 ## PR checklist
  - [X] Выставил label с номером домашнего задания
  - [X] Выставил label с темой домашнего задания
+
+# Выполнено ДЗ №10
+
+ - [X] Основное ДЗ
+  - Пройдены все шаги
+ - [X] Задание со *
+  - Передаем необходимые параметры через ansible.extra_vars
+  - Создал отдельны репозиторий для db
+  - Подключить travis полноценно не получилось, пока не поборол расшифровыванин архива (пример https://travis-ci.com/Reuuke/ansible_role_db/builds/79849892)
+
+## В процессе сделано:
+ - Всё по ДЗ
+
+## Как проверить работоспособность:
+ - Запустить playbook
+ - Проверить статус в Travis CI
+
+## PR checklist
+ - [X] Выставил label с номером домашнего задания
+ - [X] Выставил label с темой домашнего задания
+
