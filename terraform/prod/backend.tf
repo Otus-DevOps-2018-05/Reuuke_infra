@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket  = "reuuke-bucket-test1"
-    prefix  = "terraform/stage-state"
+    bucket  = "reuuke-bucket-test2"
+    prefix  = "terraform/prod-state"
   }
 }

@@ -1,0 +1,8 @@
+---
+- name: Configure Puma
+#  hosts: tag_{{ environment }}-reddit-app
+  hosts: app
+  become: true
+  roles:
+    - app
+    - jdauphant.nginx

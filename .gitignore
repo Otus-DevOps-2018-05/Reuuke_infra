@@ -6,3 +6,5 @@
 .terraform/
 *.retry
 Infra-609c709cf03c.json
+jdauphant.nginx
+vault.key
