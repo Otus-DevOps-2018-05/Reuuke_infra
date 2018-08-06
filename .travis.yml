@@ -7,14 +7,10 @@ before_install:
 
 install: ./install-dependencies.sh
 script:
-- mkdir -p /home/travis/.ssh/ ; touch /home/travis/.ssh/appuser.pub
-- packer validate -var-file=packer/variables.json.example packer/app.json
-- packer validate -var-file=packer/variables.json.example packer/db.json
-- cd terraform/prod ; terraform init -backend=false ; terraform validate --var-file=terraform.tfvars.example
-- tflint --var-file=terraform.tfvars.example
-- cd ../stage ; terraform init -backend=false ; terraform validate --var-file=terraform.tfvars.example
-- tflint --var-file=terraform.tfvars.example
-- cd ../../ansible ; ansible-lint playbooks/*.yml --exclude=roles/jdauphant.nginx
+- mkdir -p /home/travis/.ssh/ && touch /home/travis/.ssh/appuser.pub
+- find packer -type f \( -name "*.json" ! -name "variables.*" \) | xargs -n1 packer validate -var-file=packer/variables.json.example
+- for tf in stage prod; do pushd terraform/${tf} && terraform init -backend=false && tflint --var-file=terraform.tfvars.example && terraform validate -var-file=terraform.tfvars.example; popd; done
+- pushd ansible && ansible-lint playbooks/*.yml --exclude=roles/jdauphant.nginx && popd
 
 notifications:
   slack:
